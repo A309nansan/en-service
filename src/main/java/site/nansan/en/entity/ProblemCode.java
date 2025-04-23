@@ -13,6 +13,7 @@ public enum ProblemCode {
      * Level 1: Subject 1
      */
     // Chapter 1
+    enlv1s1c1gn1(ChapterCode.enlv1s1c1),
     enlv1s1c1jy1(ChapterCode.enlv1s1c1),
     // Chapter 2
     enlv1s1c2gn1(ChapterCode.enlv1s1c2),
