@@ -18,8 +18,6 @@ public enum ProblemCode {
     // Chapter 2
     enlv1s1c2gn1(ChapterCode.enlv1s1c2),
     enlv1s1c2jy1(ChapterCode.enlv1s1c2),
-    enlv1s2c3gn3(ChapterCode.enlv1s2c3),
-    enlv1s2c3gn4(ChapterCode.enlv1s2c3),
     // Chapter 3
     enlv1s1c3gn1(ChapterCode.enlv1s1c3),
     enlv1s1c3jy1(ChapterCode.enlv1s1c3),
@@ -41,7 +39,7 @@ public enum ProblemCode {
     enlv1s2c2gn1(ChapterCode.enlv1s2c2),
     enlv1s2c2gn2(ChapterCode.enlv1s2c2),
     // Chapter 3
-    enlv1s2c3gn1(ChapterCode.enlv1s2c3),
+    enlv1s2c3gn4(ChapterCode.enlv1s2c3),
 
 
     /**
