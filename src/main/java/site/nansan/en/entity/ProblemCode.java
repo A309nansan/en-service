@@ -52,7 +52,7 @@ public enum ProblemCode {
     // Chapter 2
     enlv1s3c2kc1(ChapterCode.enlv1s3c2),
     enlv1s3c2jy1(ChapterCode.enlv1s3c2),
-    en1v1s3c2sh1(ChapterCode.enlv1s3c2),
+    enlv1s3c2sh1(ChapterCode.enlv1s3c2),
     // Chapter 3
 
 
