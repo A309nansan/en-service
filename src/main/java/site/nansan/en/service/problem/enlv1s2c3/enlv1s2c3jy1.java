@@ -46,6 +46,4 @@ public class enlv1s2c3jy1 extends ProblemService {
 
         return arr;
     }
-
-
 }
