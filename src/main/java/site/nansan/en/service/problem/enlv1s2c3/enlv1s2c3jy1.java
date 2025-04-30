@@ -19,20 +19,30 @@ public class enlv1s2c3jy1 extends ProblemService {
 
         for (int p = 1; p <= 3; p++) {
 
-            int[] array = makeArray(startNumbers.get(p - 1));
-            int blankIndex = CreateRandom.generateRandomInt(1, 3);
             String keyName = "p" + p;
+            int startNumber = startNumbers.get(p - 1);
+            int blankIndex = CreateRandom.generateRandomInt(1, 3);
 
-            answer.put(keyName, array);
-            array[blankIndex] = 0;
-            problem.put(keyName, array);
+            int[] answerArray = makeAnswerArray(startNumber);
+            int[] problemArray = makeProblemArray(startNumber, blankIndex);
+
+            answer.put(keyName, answerArray);
+            problem.put(keyName, problemArray);
         }
 
         return ProblemAnswer.from(problem, answer);
     }
 
-    private int[] makeArray(int sn) {
+    private int[] makeAnswerArray(int sn) {
 
         return new int[]{sn, sn + 1, sn + 2, sn + 3, sn + 4};
+    }
+
+    private int[] makeProblemArray(int sn, int idx) {
+
+        int[] problemArray = makeAnswerArray(sn);
+
+        problemArray[idx] = 0;
+        return problemArray;
     }
 }
