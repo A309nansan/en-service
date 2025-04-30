@@ -53,6 +53,12 @@ public class CreateRandom {
         return numbers.subList(0, nPick); // 앞에서 n개만 추출
     }
 
+    public static List<Integer> pickRandomNumbers(List<Integer> list, int nPick) {
+
+        Collections.shuffle(list);
+        return list.subList(0, nPick);
+    }
+
     /**
      * @param correctNumber  정답인 정수 값
      * @param nCorrect 정답 갯수
