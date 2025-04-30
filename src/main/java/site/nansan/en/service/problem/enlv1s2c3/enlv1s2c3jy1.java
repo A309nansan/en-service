@@ -5,9 +5,7 @@ import site.nansan.en.dto.util.ProblemAnswer;
 import site.nansan.en.service.ProblemService;
 import site.nansan.global.util.CreateRandom;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class enlv1s2c3jy1 extends ProblemService {
@@ -17,7 +15,7 @@ public class enlv1s2c3jy1 extends ProblemService {
 
         Map<String, Object> problem = new HashMap<>();
         Map<String, Object> answer = new HashMap<>();
-        List<Integer> startNumbers = CreateRandom.pickRandomNumbers(List.of(1, 2, 3, 4, 5), 3);
+        List<Integer> startNumbers = CreateRandom.pickRandomNumbers(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)), 3);
 
         for (int p = 1; p <= 3; p++) {
 
