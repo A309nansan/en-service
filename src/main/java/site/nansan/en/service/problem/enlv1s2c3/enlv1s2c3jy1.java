@@ -25,7 +25,7 @@ public class enlv1s2c3jy1 extends ProblemService {
 
             answer.put(keyName, array);
             array[blankIndex] = 0;
-            answer.put(keyName, array);
+            problem.put(keyName, array);
         }
 
         return ProblemAnswer.from(problem, answer);
