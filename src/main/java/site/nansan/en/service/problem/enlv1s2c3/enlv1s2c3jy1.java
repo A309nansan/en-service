@@ -3,46 +3,47 @@ package site.nansan.en.service.problem.enlv1s2c3;
 import org.springframework.stereotype.Service;
 import site.nansan.en.dto.util.ProblemAnswer;
 import site.nansan.en.service.ProblemService;
-import site.nansan.global.util.CreateRandom;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 @Service
 public class enlv1s2c3jy1 extends ProblemService {
 
+    private final Random random = new Random();
+
     @Override
     public ProblemAnswer makeProblemAnswer() {
-
         Map<String, Object> problem = new HashMap<>();
         Map<String, Object> answer = new HashMap<>();
-        List<Integer> startNumbers = CreateRandom.pickRandomNumbers(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5)), 3);
 
-        for (int p = 1; p <= 3; p++) {
+        int[][] answers = new int[3][];
 
-            String keyName = "p" + p;
-            int startNumber = startNumbers.get(p - 1);
-            int blankIndex = CreateRandom.generateRandomInt(1, 3);
+        problem.put("p1", generateProblemAndSaveAnswer(answers, 0));
+        problem.put("p2", generateProblemAndSaveAnswer(answers, 1));
+        problem.put("p3", generateProblemAndSaveAnswer(answers, 2));
 
-            int[] answerArray = makeAnswerArray(startNumber);
-            int[] problemArray = makeProblemArray(startNumber, blankIndex);
+        answer.put("p1", answers[0]);
+        answer.put("p2", answers[1]);
+        answer.put("p3", answers[2]);
 
-            answer.put(keyName, answerArray);
-            problem.put(keyName, problemArray);
+        return ProblemAnswer.from(problem, answer)  ;
+    }
+
+    private int[] generateProblemAndSaveAnswer(int[][] answers, int index){
+        int start = random.nextInt(5)+1;
+
+        int[] arr = new int[5];
+        for(int i = 0; i < 5; i++){
+            arr[i] = start + i;
         }
 
-        return ProblemAnswer.from(problem, answer);
-    }
+        answers[index] = arr.clone();
 
-    private int[] makeAnswerArray(int sn) {
+        int blankIndex = random.nextInt(5);
+        arr[blankIndex] = 0;
 
-        return new int[]{sn, sn + 1, sn + 2, sn + 3, sn + 4};
-    }
-
-    private int[] makeProblemArray(int sn, int idx) {
-
-        int[] problemArray = makeAnswerArray(sn);
-
-        problemArray[idx] = 0;
-        return problemArray;
+        return arr;
     }
 }
