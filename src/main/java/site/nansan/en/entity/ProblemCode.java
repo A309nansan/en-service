@@ -13,7 +13,7 @@ public enum ProblemCode {
      * Level 1: Subject 1
      */
     // Chapter 1
-//    enlv1s1c1gn1(ChapterCode.enlv1s1c1),
+    enlv1s1c1gn1(ChapterCode.enlv1s1c1),
     enlv1s1c1jy1(ChapterCode.enlv1s1c1),
     // Chapter 2
     enlv1s1c2gn1(ChapterCode.enlv1s1c2),
@@ -43,8 +43,8 @@ public enum ProblemCode {
     enlv1s2c3gn3(ChapterCode.enlv1s2c3),
     enlv1s2c3gn4(ChapterCode.enlv1s2c3),
     enlv1s2c3jy1(ChapterCode.enlv1s2c3),
-//    enlv1s2c3jy3(ChapterCode.enlv1s2c3),
-//    enlv1s2c3jy4(ChapterCode.enlv1s2c3),
+    enlv1s2c3jy3(ChapterCode.enlv1s2c3),
+    enlv1s2c3jy4(ChapterCode.enlv1s2c3),
 
 
     /**
@@ -54,7 +54,7 @@ public enum ProblemCode {
     // Chapter 2
     enlv1s3c2kc1(ChapterCode.enlv1s3c2),
     enlv1s3c2jy1(ChapterCode.enlv1s3c2),
-//    enlv1s3c2sh1(ChapterCode.enlv1s3c2),
+    enlv1s3c2sh1(ChapterCode.enlv1s3c2),
     // Chapter 3
 
 
