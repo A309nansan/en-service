@@ -12,7 +12,7 @@ public class MinioUtil {
 
     private final MinioClient minioClient;
 
-    private final static String BASE_URL = "https://s3.nansan.site";
+    private final static String BASE_URL = "https://minio.nansan.site";
 
     public String getPreSignedUrl(String bucketName, String fileName) throws Exception {
 
