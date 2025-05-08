@@ -57,10 +57,13 @@ public enum ProblemCode {
     enlv1s3c1kc2(ChapterCode.enlv1s3c1),
     enlv1sec1jy1(ChapterCode.enlv1s3c1),
     enlv1s3c1jy2(ChapterCode.enlv1s3c1),
+    enlv1s3c1sh1(ChapterCode.enlv1s3c1),
+
     // Chapter 2
     enlv1s3c2kc1(ChapterCode.enlv1s3c2),
     enlv1s3c2jy1(ChapterCode.enlv1s3c2),
     enlv1s3c2sh1(ChapterCode.enlv1s3c2),
+
     // Chapter 3
     enlv1s3c3kc1(ChapterCode.enlv1s3c3),
     enlv1s3c3kc2(ChapterCode.enlv1s3c3),
