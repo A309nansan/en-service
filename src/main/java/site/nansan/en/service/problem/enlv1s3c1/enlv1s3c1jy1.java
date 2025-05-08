@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-public class enlv1s3c1jy2 extends ProblemService {
+public class enlv1s3c1jy1 extends ProblemService {
     @Override
     public ProblemAnswer makeProblemAnswer() {
         Map<String, Object> problem = new HashMap<>();
